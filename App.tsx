@@ -1,11 +1,16 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import {NativeBaseProvider} from 'native-base';
+import {NavigationContainer} from '@react-navigation/native';
+import { StackAllScreen } from './src/screens/auth/index';
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <NavigationContainer>
+      <NativeBaseProvider>
+        <StackAllScreen />
+      </NativeBaseProvider>
+    </NavigationContainer>
   )
 }
 

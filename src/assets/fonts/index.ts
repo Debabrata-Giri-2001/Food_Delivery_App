@@ -1,1 +1,3 @@
-export {};
+export default {
+  PATRIK: require('./Patrik.ttf'),
+};
