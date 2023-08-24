@@ -35,7 +35,7 @@ const StackAllScreen = () => {
           name="SignUp"
           component={SignUp}
           options={{
-            headerShown: true,
+            headerShown: false,
           }}
         />
       </Stack.Navigator>

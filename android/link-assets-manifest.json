@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/index.ts",
+      "sha1": "4c2e2ecd368c83deb8362a7bc7c6f7638a4d9042"
+    },
+    {
+      "path": "src/assets/fonts/PatrickHand-Regular.ttf",
+      "sha1": "8e9d9952d4f107775141b5ae00eeb3cac3a19d46"
+    },
+    {
+      "path": "src/assets/fonts/Patrik.ttf",
+      "sha1": "a8dbf74a4f0a753d046dd152fc618db6e7122837"
+    }
+  ]
+}

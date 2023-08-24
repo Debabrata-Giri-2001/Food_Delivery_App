@@ -4,15 +4,31 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import {IMAGES} from '../../assets';
-import {Box, Image, Text, Input, FlatList} from 'native-base';
+import {
+  Box,
+  Image,
+  Text,
+  Input,
+  FlatList,
+  Pressable,
+  HStack,
+} from 'native-base';
 import {LoginBrand} from '../../data/LoginBrand';
+import LinearGradient from 'react-native-linear-gradient';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {RootStackPramList} from '../auth/StackAllScreen';
 
 const screenWidht = Dimensions.get('screen').width;
 const screenHeight = Dimensions.get('screen').height;
 
 const LogIn = () => {
+  const [show, setShow] = useState(false);
+  const navigation = useNavigation<StackNavigationProp<RootStackPramList>>();
+
   return (
     <SafeAreaView>
       {/* Log in page Image Box */}
@@ -44,26 +60,47 @@ const LogIn = () => {
         <Text pl={7} mb={2} color={'#171717'} bold fontSize={20}>
           Email
         </Text>
-        <Input
-          alignSelf={'center'}
-          rounded={'xl'}
-          size={'xl'}
-          w={screenWidht - 50}
-          bg={'#cbffde80'}
-        />
+        <LinearGradient
+          colors={['#407cff5a', '#40ff804f', '#407cff5f']}
+          style={styles.linearGradient}>
+          <Input
+            variant="unstyled"
+            alignSelf={'center'}
+            size={'2xl'}
+            borderRadius={14}
+            w={screenWidht - 50}
+          />
+        </LinearGradient>
       </Box>
+
       {/* Password Input Field */}
       <Box mt={'5%'}>
         <Text pl={7} mb={2} color={'#171717'} bold fontSize={20}>
           Password
         </Text>
-        <Input
-          alignSelf={'center'}
-          rounded={'xl'}
-          size={'xl'}
-          w={screenWidht - 50}
-          bg={'#cbffde80'}
-        />
+        <LinearGradient
+          colors={['#407cff5a', '#40ff804f', '#407cff5f']}
+          style={styles.linearGradient}>
+          <Input
+            variant="unstyled"
+            alignSelf={'center'}
+            size={'2xl'}
+            borderRadius={14}
+            w={screenWidht - 50}
+            type={show ? 'text' : 'password'}
+            InputRightElement={
+              <Pressable
+                style={styles.visibility}
+                onPress={() => setShow(!show)}>
+                <Icon
+                  name={show ? 'visibility' : 'visibility-off'}
+                  size={25}
+                  color="black"
+                />
+              </Pressable>
+            }
+          />
+        </LinearGradient>
       </Box>
       {/* Forgot Password */}
       <TouchableOpacity>
@@ -117,18 +154,33 @@ const LogIn = () => {
       </Box>
 
       {/* Dont have accoutn */}
-      <Box p={2}>
+      <HStack p={2} justifyContent="center">
         <Text
-          textAlign={'center'}
           fontSize={18}
           fontWeight={'600'}
           color={'#171717'}>
-          Dont have an account ? <Text color={'#EF1111F0'}>Sign up</Text>
+          Dont have an account ?
         </Text>
-      </Box>
+        <TouchableOpacity
+        onPress={() => navigation.navigate('SignUp')}
+        >
+          <Text color={'#EF1111F0'} fontSize={18} fontWeight={'600'}>
+            Sign up
+          </Text>
+        </TouchableOpacity>
+      </HStack>
     </SafeAreaView>
   );
 };
 
 export default LogIn;
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  linearGradient: {
+    width: screenWidht - 50,
+    alignSelf: 'center',
+    borderRadius: 14,
+  },
+  visibility: {
+    marginRight: 12,
+  },
+});

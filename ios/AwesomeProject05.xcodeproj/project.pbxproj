@@ -14,6 +14,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-AwesomeProject05-AwesomeProject05Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeProject05-AwesomeProject05Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8671D1A1C84A49B7B9D5E5D7 /* PatrickHand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97A595D344044A578E92AD4C /* PatrickHand-Regular.ttf */; };
+		CE00CDAC55B24DC6BCF5974F /* Patrik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90637AE8B842418BB2DFDD00 /* Patrik.ttf */; };
+		EC22EE120E054EE0B35A6FF5 /* index.ts in Resources */ = {isa = PBXBuildFile; fileRef = 063BCE511A4641E3B59424F0 /* index.ts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AwesomeProject05/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeProject05-AwesomeProject05Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject05-AwesomeProject05Tests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject05-AwesomeProject05Tests/Pods-AwesomeProject05-AwesomeProject05Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		97A595D344044A578E92AD4C /* PatrickHand-Regular.ttf */ = {isa = PBXFileReference; name = "PatrickHand-Regular.ttf"; path = "../src/assets/fonts/PatrickHand-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		90637AE8B842418BB2DFDD00 /* Patrik.ttf */ = {isa = PBXFileReference; name = "Patrik.ttf"; path = "../src/assets/fonts/Patrik.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		063BCE511A4641E3B59424F0 /* index.ts */ = {isa = PBXFileReference; name = "index.ts"; path = "../src/assets/fonts/index.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				109167CF76AC47BDAF4615B3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +154,17 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		109167CF76AC47BDAF4615B3 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				97A595D344044A578E92AD4C /* PatrickHand-Regular.ttf */,
+				90637AE8B842418BB2DFDD00 /* Patrik.ttf */,
+				063BCE511A4641E3B59424F0 /* index.ts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +262,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				8671D1A1C84A49B7B9D5E5D7 /* PatrickHand-Regular.ttf in Resources */,
+				CE00CDAC55B24DC6BCF5974F /* Patrik.ttf in Resources */,
+				EC22EE120E054EE0B35A6FF5 /* index.ts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

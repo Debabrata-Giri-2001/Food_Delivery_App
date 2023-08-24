@@ -2,10 +2,9 @@ import {View, Dimensions, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {IMAGES, FONTS} from '../../assets';
+import {IMAGES,FONTS} from '../../assets';
 import {Box, Image, Text} from 'native-base';
 import {RootStackPramList} from '../auth/StackAllScreen';
-
 const screenHeight = Dimensions.get('screen').height;
 const screenWidht = Dimensions.get('screen').width;
 
@@ -27,7 +26,11 @@ const GetStarted = () => {
       />
 
       <Box flex={1} alignItems={'center'} justifyContent={'center'}>
-        <Text color={'#FFFFFF'} fontSize={45} fontWeight={'900'}>
+        <Text
+          color={'#FFFFFF'}
+          fontSize={45}
+          fontWeight={'900'}
+          fontFamily={'PatrickHand-Regular'}>
           FODDEl
         </Text>
         <Text
