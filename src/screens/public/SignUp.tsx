@@ -131,7 +131,7 @@ const SignUp = () => {
       </TouchableOpacity>
 
       {/* LogIn BTN */}
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('ButtomTab')}>
         <Text
           color={'#FFFFFF'}
           fontSize={18}
@@ -174,9 +174,7 @@ const SignUp = () => {
         <Text fontSize={18} fontWeight={'600'} color={'#171717'}>
           Already Existing ?
         </Text>
-        <TouchableOpacity
-        onPress={()=>navigation.navigate('LogIn')}
-        >
+        <TouchableOpacity onPress={() => navigation.navigate('LogIn')}>
           <Text color={'#EF1111F0'} fontSize={18} fontWeight={'600'}>
             Sign up
           </Text>

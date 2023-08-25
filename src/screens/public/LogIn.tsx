@@ -115,7 +115,9 @@ const LogIn = () => {
       </TouchableOpacity>
 
       {/* LogIn BTN */}
-      <TouchableOpacity>
+      <TouchableOpacity
+      onPress={()=>navigation.navigate('ButtomTab')}
+      >
         <Text
           color={'#FFFFFF'}
           fontSize={18}
