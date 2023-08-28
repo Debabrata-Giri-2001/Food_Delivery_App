@@ -1,13 +1,16 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import React from 'react';
 import TabContainer from '../../../components/containers/TabContainer';
-
+import {Box} from 'native-base';
+import {ProfileDetails, OfferSlide, TopCategory} from './index';
 const Home = () => {
   return (
     <TabContainer>
-      <View style={styles.container}>
-        <Text style={styles.text}>Home</Text>
-      </View>
+      <Box>
+        <ProfileDetails />
+        <OfferSlide />
+        <TopCategory />
+      </Box>
     </TabContainer>
   );
 };
